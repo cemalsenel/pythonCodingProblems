@@ -1,9 +1,8 @@
-numbers = [100, 2, 81, 4, 95]
+numbers = [100, 2, 81, 400, 95]
 
 maxNum = numbers[0]
 for num1 in numbers:
-    for num2 in numbers:
-        if num2 > num1 :
-            maxNum = num2
+        if num1 > maxNum :
+            maxNum = num1
 
 print(maxNum)
