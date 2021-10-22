@@ -17,10 +17,10 @@ def convert(milliseconds):
     # format the output string
     return f'{hours} hour/s'*(hours != 0) + f' {minutes} minute/s'*(minutes != 0) + f' {seconds} second/s' *(seconds != 0) or f'just {milliseconds} millisecond/s' * (milliseconds < 1000)
     
-​
+
 # flag to show warning to the user, default is False.
 is_invalid = False
-​
+
 # start endless loop to get user input continuously
 while True:
     # info text to be shown to the user
@@ -28,7 +28,7 @@ while True:
 ###  This program converts milliseconds into hours, minutes, and seconds ###
 (To exit the program, please type "exit")
 Please enter the milliseconds (should be greater than zero) : """
-​
+
     # get the user input after showing info text.
     # if is_invalid set to True then show additional warning to the user
     # pass the input the alphanum variable after stripping white space characters
